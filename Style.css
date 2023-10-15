@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/*corpo do site8*/
+body {
+  font-size: 100%;
+  background-image: url('imagem-de-baleia.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: row;
+  justify-content: center;
+}
+/*Cabecalho - nav bar*/
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgb(0 0 0 / 46%);
+}
+
+.cabecalho-imagem {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu-itens {
+  display: flex;
+}
+
+.cabecalho-menu-item {
+  font-family: 'Sarala', sans-serif;
+  color: #FFF2E7;
+  font-weight: 400;
+  font-size: 18px;
+  transition: color 0.3s, text-shadow 0.3s;
+  margin-right: 20px;
+}
+
+.cabecalho-menu-item:hover {
+  animation: neon 1s infinite;
+  color: #f2f2f5;
+  text-shadow: 0 0 10px #079df5, 0 0 20px #079df5, 0 0 30px #079df5;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #FFF2E7;
+}
+/*Conteudo Principal*/
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFF2E7;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-subtitulo2 {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ECD6C4;
+}
+/*botao*/
+#button-Participe {
+  background-color: #ECD6C4;
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #079df5;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+#button-Participe:hover {
+  background-color: rgba(49, 7, 238, 0.199);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+/*Imagens*/
+.conteudo-principal-imagem {
+  border-radius: 10%;
+  position: relative;
+  padding-top: 60px;
+}
+
+.imagem {
+  height: 430px;
+  border-radius: 10%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  margin: 20px;
+}
+
+.imagem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/*Conteudo secundario*/
+.conteudo-secundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+  background-color: rgb(0 0 0 / 46%);
+  border-top: 0.4px solid #FFF2E7;
+  border-bottom: 0.4px solid #FFF2E7;
+}
+
+.conteudo-secundario-titulo {
+  padding-top: 48px;
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFF2EF;
+  margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ECD6C4;
+  margin-left: 10px;
+}
+/*Rodapé*/
+footer {
+  background-color: rgb(0 0 0 / 46%);
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #f2f2f5;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  color: #079df5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  border-bottom: 0.4px solid #FFF2E7;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+.sociais {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+/*Icones sociais*/
+.sociais li {
+  margin: 0 10px;
+}
+
+.sociais a {
+  text-decoration: none;
+  color: #079df5;
+}
+
+.sociais a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.sociais a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background-color: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+/*Responsivo*/
+@media (max-width: 768px) {
+  body {
+    background-image: url('imagem-de-baleia.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  header {
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-itens {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: space-between;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    height: 14.7rem;
+    background-color: rgb(0 0 0 / 46%);
+    z-index: 1;
+    transition: .3s ease;
+    overflow: hidden;
+  }
+
+  .menu-itens a {
+    display: none;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .cabecalho {
+    justify-content: space-between;
+  }
+
+  .menu-itens.active {
+    display: none;
+  }
+
+  .cabecalho-imagem {
+    left: 2px;
+    display: flex;
+  }
+
+  .menu-icon {
+    position: absolute;
+    display: block;
+    color: #ffffff;
+    top: 40px;
+    right: 30px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+
+  #menu-toggle:checked~.menu-itens {
+    height: 14.7rem;
+    display: block
+  }
+
+  .menu-itens a {
+    display: block;
+  }
+
+
+  label[for="menu-toggle"] {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagem {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .conteudo {
+    display: flex;
+
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conteudo-principal-escrito {
+    padding-left: 33px;
+  }
+
+  .conteudo-principal-imagem {
+    padding-right: 45px;
+  }
+}
