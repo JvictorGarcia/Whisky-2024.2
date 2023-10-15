@@ -64,21 +64,18 @@ body {
 .login-button button {
     border: none;
     background-color: #079df5;
-    ;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
 }
 
 .login-button button:hover {
     background-color: #15133b3d;
 }
 
-.login-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-}
 
 h1 {
     display: block;
@@ -152,18 +149,17 @@ h1 {
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
 }
 
 .continue-button button:hover {
     background-color: #15133b3d;
 }
 
-.continue-button button a {
-    text-decoration: none;
-    font-size: 0.93rem;
-    font-weight: 500;
-    color: #fff;
-}
+
 /*responsivo*/
 @media screen and (max-width: 1330px) {
     .form-image {
