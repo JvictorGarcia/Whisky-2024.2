@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style-form.css">
+    <link rel="stylesheet" href="style-form.css">
     <title>Formulário</title>
 </head>
 
@@ -64,6 +64,7 @@
                         <input id="confirmPassword" type="password" name="confirmPassword"
                             placeholder="Digite sua senha novamente" required>
                     </div>
+                    
                     <!--Botao enviar-->
                 </div>
                 <div class="continue-button">
@@ -72,6 +73,138 @@
             </form>
         </div>
     </div>
+    
+                    <!-- Lista de pesquisa por dados do usuarios-->
+                    <div class="lista">
+                        <ul id="data-list"></ul>
+                        <div class="form-actions">
+                        <button id="botao-limpar">Limpar Campos</button>
+                        <button id="botao-limpar-tudo">Excluir Todos</button>
+                        <input type="text" id="pesquisar-item" placeholder="Pesquisar">
+                        <button id="botao-pesquisar">Pesquisar</button>
+                    </div>
+                    </div>
+
+                    <!-- Script JavaScript -->
+    <script>
+       document.addEventListener('DOMContentLoaded', function () {
+    var form = document.querySelector('form');
+
+    // Evento ao enviar o formulário
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Obtenção dos valores dos inputs
+
+        var firstName = document.getElementById('firstname').value;
+        var lastName = document.getElementById('lastname').value;
+        var email = document.getElementById('email').value;
+        var number = document.getElementById('number').value;
+
+        // Obtenção da data atual
+
+        var currentDate = new Date();
+        var formattedDate = currentDate.toLocaleDateString() + ' ' + currentDate.toLocaleTimeString();
+
+        // Criação de um item da lista com os dados do formulário
+
+        var listItem = document.createElement('li');
+        listItem.innerHTML = '<strong>Data:</strong> ' + formattedDate + '<br>' +
+                            '<strong>Nome:</strong> ' + firstName + ' ' + lastName + '<br>' +
+                            '<strong>Email:</strong> ' + email + '<br>' +
+                            '<strong>Celular:</strong> ' + number + '<br>' +
+                            '<button class="excluir-item">Excluir</button>';
+
+
+            // Adição do item à lista
+
+        var list = document.getElementById('data-list');
+        list.appendChild(listItem);
+
+        // Limpa o formulário
+
+        form.reset();
+
+        // Salva os dados no armazenamento local
+
+        saveToLocalStorage();
+    });
+
+    //Evento para limpar os campos do formulário
+
+    document.getElementById('botao-limpar').addEventListener('click', function () {
+        form.reset();
+    });
+
+     // Evento ao clicar para excluir um item da lista
+
+    document.getElementById('data-list').addEventListener('click', function (event) {
+        if (event.target.classList.contains('excluir-item')) {
+            event.target.parentNode.remove();
+            saveToLocalStorage();
+        }
+    });
+
+     // Evento para excluir todos os itens da lista
+
+    document.getElementById('botao-limpar-tudo').addEventListener('click', function () {
+        var list = document.getElementById('data-list');
+        list.innerHTML = '';
+        localStorage.removeItem('formData');
+    });
+
+   
+    // Evento para pesquisar itens na lista
+
+    document.getElementById('botao-pesquisar').addEventListener('click', function () {
+        var searchTerm = document.getElementById('pesquisar-item').value.toLowerCase();
+
+        var listItems = document.getElementById('data-list').getElementsByTagName('li');
+        for (var i = 0; i < listItems.length; i++) {
+            var listItemText = listItems[i].innerText.toLowerCase();
+
+            
+            if (listItemText.includes(searchTerm)) {
+                listItems[i].style.display = 'block';
+            } else {
+                listItems[i].style.display = 'none';
+            }
+        }
+    });
+
+    // Função para salvar os dados no armazenamento local
+
+    function saveToLocalStorage() {
+        var list = document.getElementById('data-list');
+        var data = [];
+        var listItems = list.getElementsByTagName('li');
+
+        for (var i = 0; i < listItems.length; i++) {
+            data.push(listItems[i].innerHTML);
+        }
+
+        localStorage.setItem('formData', JSON.stringify(data));
+    }
+
+    // Função para carregar dados do armazenamento local
+
+    function loadFromLocalStorage() {
+        var data = localStorage.getItem('formData');
+        if (data) {
+            var list = document.getElementById('data-list');
+            list.innerHTML = JSON.parse(data).join('');
+        }
+    }
+
+     // Carrega dados ao iniciar a página
+
+    loadFromLocalStorage();
+});
+
+    </script>
+    
+    
 </body>
 
 </html>
