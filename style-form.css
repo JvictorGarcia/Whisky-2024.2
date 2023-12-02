@@ -13,10 +13,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('imagem-de-baleia(1).jpg');
+    background-image: url('imagem-de-baleia(1\).jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    flex-direction: column;
 }
 /*Conteudo do card*/
 .container {
@@ -33,11 +34,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(0 0 0 / 46%);
-    padding: 1rem;
+    padding: rem;
 }
 
 .form-image img {
-    width: 31rem;
+    width: 25rem;
 }
 /*formulario*/
 .form {
@@ -51,7 +52,6 @@ body {
 }
 
 .form-header {
-    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -143,7 +143,7 @@ h1 {
 
 .continue-button button {
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: -1.5rem;
     border: none;
     background-color: #079df5;
     padding: 0.62rem;
@@ -158,8 +158,89 @@ h1 {
 .continue-button button:hover {
     background-color: #15133b3d;
 }
+.lista{
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 46%);
+    padding: 3rem;
+}
+#data-list {
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.excluir-item{
+    width: 33%;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #079df5;
+    padding: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 30%;
+}
+.excluir-item:hover {
+    background-color: #f5072f;
+}
+#botao-limpar{
+    background-color: #079df5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.2rem;
+    text-decoration: none;
+    border: none;
+    font-weight: 500;
+}
+#botao-limpar:hover {
+    background-color: #f5072f;
+}
+#botao-limpar-tudo{
+    background-color: #079df5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.2rem;
+    text-decoration: none;
+    border: none;
+    font-weight: 500;
+}
+#botao-limpar-tudo:hover {
+    background-color: #f5072f;
+}
 
+#botao-pesquisar{
+    background-color: #079df5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.2rem;
+    text-decoration: none;
+    border: none;
+    font-weight: 500;
+}
 
+#botao-pesquisar:hover {
+    background-color: #15133b3d;
+}
+#pesquisar-item{
+    background-color: #15133b3d;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+#pesquisar-item::placeholder {
+    color: #fff;
+}
 /*responsivo*/
 @media screen and (max-width: 1330px) {
     .form-image {
