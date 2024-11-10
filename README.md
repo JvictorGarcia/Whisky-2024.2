@@ -10,7 +10,7 @@
 
 | Nome do Integrante       | Foto                                              | GitHub Link                                 |
 |--------------------------|---------------------------------------------------|---------------------------------------------|
-| **José Victor Garcia**       | ![Foto1](caminho/para/foto1.jpg)                  | [GitHub - Nome 1](https://github.com/usuario1) |
+| **José Victor Garcia**       | ![Foto1](caminho/para/foto1.jpg)                  | [GitHub - José Victor Garcia]([https://github.com/usuario1](https://github.com/JvictorGarcia)) |
 | **Nome Completo 2**       | ![Foto2](caminho/para/foto2.jpg)                  | [GitHub - Nome 2](https://github.com/usuario2) |
 | **Nome Completo 3**       | ![Foto3](caminho/para/foto3.jpg)                  | [GitHub - Nome 3](https://github.com/usuario3) |
 | **Nome Completo 4**       | ![Foto4](caminho/para/foto4.jpg)                  | [GitHub - Nome 4](https://github.com/usuario4) |
