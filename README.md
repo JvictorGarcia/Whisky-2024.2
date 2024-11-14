@@ -12,7 +12,7 @@
 |--------------------------|---------------------------------------------------|---------------------------------------------|
 | **José Victor Garcia**       | ![Foto1](caminho/para/foto1.jpg)                  | https://github.com/JvictorGarcia|
 | **Marcos Gustavo Lara**       | ![Foto2](caminho/para/foto2.jpg)                  | https://github.com/GustavoLaraa |
-| **Nome Completo 3**       | ![Foto3](caminho/para/foto3.jpg)                  | [GitHub - Nome 3](https://github.com/usuario3) |
+| **Luiz Arthur Chagas Oliveira**       | ![Foto3](caminho/para/foto3.jpg)                  | https://github.com/lututui |
 | **Nome Completo 4**       | ![Foto4](caminho/para/foto4.jpg)                  | [GitHub - Nome 4](https://github.com/usuario4) |
 
 
