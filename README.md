@@ -10,10 +10,10 @@
 
 | Nome do Integrante       | Foto                                              | GitHub Link                                 |
 |--------------------------|---------------------------------------------------|---------------------------------------------|
-| **José Victor Garcia**       | ![Foto1](caminho/para/foto1.jpg)                  | https://github.com/JvictorGarcia|
-| **Marcos Gustavo Lara**       | ![Foto2](caminho/para/foto2.jpg)                  | https://github.com/GustavoLaraa |
-| **Luiz Arthur Chagas Oliveira**       | ![Foto3](caminho/para/foto3.jpg)                  | https://github.com/lututui |
-| **Henrique Aparecido**       | ![Foto4](caminho/para/foto4.jpg)                  | https://github.com/HenriqueUTF |
+| **José Victor Garcia**           | <img src="https://github.com/JvictorGarcia.png" width="40">  | https://github.com/JvictorGarcia  |
+| **Marcos Gustavo Lara**          | <img src="https://github.com/GustavoLaraa.png" width="40">   | https://github.com/GustavoLaraa   |
+| **Luiz Arthur Chagas Oliveira**  | <img src="https://github.com/lututui.png" width="40">        | https://github.com/lututui        |
+| **Henrique Aparecido**           | <img src="https://github.com/HenriqueUTF.png" width="40">    | https://github.com/HenriqueUTF    |
 
 
 ### Descrição do Projeto
